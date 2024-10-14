@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->uuid("id")->pimary();
             $table->string("name");
-            $table->longText("address");
             $table->string("phone");
             $table->longText("description")->nullable();
             $table->timestamps();

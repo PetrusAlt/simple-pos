@@ -16,7 +16,6 @@ return new class extends Migration
             $table->uuid("customer_id");
             $table->string("name");
             $table->string("phone");
-            $table->longText("address");
             $table->decimal("total", 15);
             $table->decimal("grandtotal", 15);
             $table->timestamps();

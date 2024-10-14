@@ -17,7 +17,14 @@ class ProductFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            /**
+                $id = $table->uuid("id")->pimary();
+                $name = $table->string("name");
+                $description = $table->longText("description")->nullable();
+            */
+
+            'id' => fake()->uuid(),
+            'name' => fake()->name(),
         ];
     }
 }

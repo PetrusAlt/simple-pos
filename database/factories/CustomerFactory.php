@@ -17,20 +17,16 @@ class CustomerFactory extends Factory
     public function definition(): array
     {
         return [
-            /** 
-             * TABLE DESCRIPTION:
-             * $table->uuid("id")->pimary();
-             * $table->string("name");
-             * $table->longText("address");
-             * $table->string("phone");
-             * $table->longText("description"); 
+            /**
+                TABLE DESCRIPTION:
+                $table->uuid("id")->pimary();
+                $table->string("name");
+                $table->string("phone");
             */
 
             'id' => fake()->uuid(),
             'name' => fake()->name(),
-            'address' => fake()->streetAddress(),
             'phone' => fake()->phoneNumber(),
-            // "description" => fake()->description(),
         ];
     }
 }
